@@ -1,7 +1,6 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
-        //Brutforce : sort(nums.begin(),nums.end());
         int n = nums.size();
         int count0 =0, count1=0,count2=0;
 
