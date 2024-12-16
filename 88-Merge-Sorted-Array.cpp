@@ -4,7 +4,8 @@ public:
        int idx = m+n-1,i=m-1,j=n-1; 
        while(i>=0 && j>=0){
         if(A[i]>=B[j]){
-            A[idx--]= A[i--];
+            A[idx]= A[i]; //or A[idx--]= A[i--]; to remove idx--;i--;
+            idx--;i--;
         }else{
             A[idx--] = B[j--];
         }
