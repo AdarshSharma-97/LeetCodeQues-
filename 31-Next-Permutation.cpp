@@ -1,6 +1,7 @@
 class Solution {
 public:
     void nextPermutation(vector<int>& A) {
+        //next_permutation(A.begin(),A.end())
         int pivot = -1,n = A.size();
 
         for(int i=n-2;i>=0;i--){
